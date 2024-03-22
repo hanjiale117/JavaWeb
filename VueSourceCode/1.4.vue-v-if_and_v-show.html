@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- v-if -->
+        <!-- 
+            <span>young</span>
+            <br>
+            <br>
+         -->
+        年龄 <input type="text" v-model="age">经判断,为:
+        <span v-if="age <= 35 ">young</span>
+        <span v-else-if="age > 35 && age < 60">adult</span>
+        <span v-else>old</span>
+        <br> <br>
+
+        <!-- v-show -->
+        <!-- 
+            <span style="">young</span>
+            <span style="display: none;">adult</span>
+            <span style="display: none;">old</span>
+        -->
+        年龄 <input type="text" v-model="age">经判断,为:
+        <span v-show="age <= 35 ">young</span>
+        <span v-show="age > 35 && age < 60">adult</span>
+        <span v-show="age > 60">old</span>
+        <br> <br>
+    </div>
+    
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            age:20
+        },
+        methods: {
+            
+        },
+    })
+</script>
+
+</html>

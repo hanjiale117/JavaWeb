@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/vue.js"></script>
+    <style>
+        #center{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"  align = 'center'>
+        <table border="1" cellspacing="0" width="60%" >
+            <!-- 表头 -->
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+                <th>成绩</th>
+                <th>等级</th>
+            </tr>
+            <!-- 静态数据 -->
+
+            <tr align="center" v-for="(user, index) in users">
+                <td>{{index+1}} </td>
+                <td>{{user.name}} </td>
+                <td>{{user.age}} </td>
+                <td >
+                    <span v-if="user.gender == 1">Man</span>
+                    <span v-if="user.gender == 2">Woman</span>
+                </td>
+                <td>{{user.score}} </td>
+                <td>
+                    <span v-if="user.score >= 85" >Good</span>
+                    <span v-else-if="user.score >=60 ">Average</span>
+                    <span style="color: red;" v-else >Bad!!</span>
+                </td>
+            </tr>
+        </table>
+
+
+
+    </div>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            users:[{
+                name:"tom",
+                age:20,
+                gender:1,
+                score:99
+            },{
+                name:"dick",
+                age:19,
+                gender:1,
+                score:88
+            },{
+                name:"cock",
+                age:18,
+                gender:2,
+                score:33
+            }]
+
+        },
+        methods: {
+            
+        },
+    })
+
+
+</script>
+</html>

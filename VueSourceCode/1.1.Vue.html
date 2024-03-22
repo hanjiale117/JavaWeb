@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 第一步 -->
+    <script src = "js/vue.js"></script>
+</head>
+<body>
+        <div id="app">
+            <!-- v-mode数据模型 -->
+            <input type="text" v-model="message">
+            {{message}}
+            <!-- 插值 表达式 -->
+        </div>
+    
+</body>
+    <!-- 第二步操作 -->
+<script>
+    //定义Vue标签
+    new Vue({
+        el:"#app",//vue接管的区域
+        data:{
+        message:"Hello Vue!"
+  }
+})
+</script>
+</html>
