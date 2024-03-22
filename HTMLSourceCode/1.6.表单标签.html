@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-表单</title>
+</head>
+<body>
+    <!-- action  是指定提交地方的URL 不指定 默认提交当前页面
+        method:表单的提交方式
+        get:在URL后面拼接表单数据 比如:?user_name=1&age=1 默认提交为get
+        post:在消息体(请求体中)传递的,参数大小无限制; (F12工具查看)
+      -->
+    
+    <!-- <form action="" method="get"> -->
+    <form action="" method="post">
+        用户名: <input type="text" name="user_name">
+        <br>
+        年龄:  <input type="text" name="age">
+        <br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

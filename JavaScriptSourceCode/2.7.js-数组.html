@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+        // // 定义数组-1
+        // var arr = new Array(1,2,3,4,5);
+        // // 在控制台输出1,2,3;
+        // console.log(arr[0]);//1
+        // console.log(arr[1]);//2
+        // console.log(arr[2]);//3
+
+        // // 定义数组-2
+        // var arr = [1,2,3,4];
+        // console.log(arr[0]);//1
+        // console.log(arr[1]);//2
+        // console.log(arr[2]);//3
+
+        // // 数组特点 :长度可变 类型可变
+        // var arr = [1,2,3,4];
+        // arr[10] = 10;
+        // console.log(arr[10]);//10
+        // console.log(arr[9]); //undefined
+        // console.log(arr[8]); //undefined
+        
+        // arr[9] = "a";
+        // arr[8] = true;
+        // console.log(arr[9]);
+        // console.log(arr[8]);
+        // console.log(arr);
+        // //1,2,3,4,true,"a",10,
+        // //length = 11;
+
+        // // length属性
+
+        // var arr = [1,2,3,4];
+        // for (let i = 0; i < arr.length; i++) {
+        //     console.log(arr[i]);            
+        // }
+        // //1 2 3 4
+
+        var arr = [1,2,3,4];
+        arr[10] = 10;
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);            
+        }
+        console.log("-------------");
+        //1 2 3 4 undefined 10
+
+        // forEach 遍历数组中有值的元素
+        
+        var arr = [1,2,3,4];
+        arr[10] = 10;
+        arr.forEach(function(e) {
+            console.log(e);
+        });
+        //1 2 3 4 10
+
+        //ES6 箭头函数
+        arr.forEach((e) => {
+            console.log(e);
+        });
+
+        //push :添加元素到数组末尾
+        arr.push(7,8,9);
+        console.log(arr);
+        //1 2 3 4 10 7 8 9
+
+        //splice:删除元素 
+        //从2开始删 删除3个
+        arr.splice(2,3);
+
+        console.log(arr);
+        //1 2 10 7 8 9
+</script>
+</html>

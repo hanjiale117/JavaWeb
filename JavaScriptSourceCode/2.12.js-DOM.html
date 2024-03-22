@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> <img id ="h1" src="./1.jpg" > </h1>
+
+    <div class="cls">123</div> <br>
+    <div class="cls">456</div> <br> 
+
+    <label >
+    <input type="checkbox" name="hobby">View
+    </label>
+    <label >
+    <input type="checkbox" name="hobby">Trip
+    </label>
+    <label >
+    <input type="checkbox" name="hobby">Game
+    </label>
+
+    
+</body>
+<script>
+
+    //     //1.获取Element元素
+    //     //1.1.ID
+    //     var number = document.getElementById('h1');
+    //     alert(number);
+    //     //[object HTMLImageElement]
+
+    //     //1.2.标签 返回值为数组
+    //     var divs =  document.getElementsByTagName("div");
+    //     for (let i = 0; i < divs.length; i++) {
+    //         alert(divs[i]);            
+    //     }
+    //     //[object HTMLDivElement]
+
+
+    //     //1.3.根据name属性获取
+    //    var ins = document.getElementsByName('hobby');
+        
+    //     for (let i = 0; i < ins.length; i++) {
+    //         alert(ins[i]);            
+    //     }
+    //     //[object HTMLInputElement]
+
+    //     //1.4.根据Class属性获取
+    //     var arrcls = document.getElementsByClassName("cls");
+    //     for (let i = 0; i < arrcls.length; i++) {
+    //         alert(arrcls[i]);            
+    //     }
+    //     //[object HTMLDivElement]
+
+
+        //更改元素
+        var arrcls = document.getElementsByClassName("cls");
+
+        var div1= arrcls[0]
+        div1.innerHTML = "666";//元素内容的修改
+
+        //更改元素 并添加颜色
+        var ins = document.getElementsByClassName("cls");
+        for (let i = 0; i< ins.length; i++) {
+            ins[i].innerHTML += " <font color = 'red'>666</font>";
+        }
+
+        //使所有的复选框呈现被选中的状态
+        var inss = document.getElementsByName('hobby');
+        for (let i = 0; i < inss.length; i++) {
+            inss[i].checked = true;
+        }
+
+</script>
+</html>

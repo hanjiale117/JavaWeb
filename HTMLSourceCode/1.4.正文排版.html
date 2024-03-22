@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习</title>
+    <style>
+            h1{
+                color:#f00;
+            }
+            /* 元素选择器 */
+            /* span{
+                color: rgb(168, 130, 173);
+            } */
+            /* 类选择器 */
+            /* .cls{
+                color: rgb(168, 179, 173);
+            } */
+            /* ID选择器 */
+            #time{
+                color:#f00;
+                /* font-size 设置字体大小 */
+                font-size: 20px;
+            }
+
+            a {
+                color: #000;
+                /* text-decoration 设置文本为一个标准的文本  默认去除下划线*/
+                text-decoration: none;
+            }
+            a:hover { 
+                color: blue; 
+            }
+            p{
+                /* 设置首行缩进 */
+                text-indent: 35px;
+                line-height: 20px;
+            }
+
+
+            #plast{
+                text-align: right;
+            }
+            #center{
+                width: 60%;
+                /* 用margin 来改变外边距 */
+                /* margin: 0% 17.5% 0% 17.5%; */
+
+                /* 上下 左右 */
+                margin: 0 auto; 
+
+            }
+    </style>
+
+</head>
+<body>
+    <div id="center">
+
+    <img src="./img/news_logo.png" width="10%"> <a href="https://leetcode.cn/" target="_blank" >LeetCode</a> >  正文
+    
+    <h1>1111111111111111</h1>
+
+        <hr>
+        <span class="cls" id="time">2024-3-8 11:29 China No.1</span>   <span class="cls"><a href="https://www.sias.edu.cn/" target="_blank">Sias</a> </span>
+        <hr>
+
+        <!-- 正文 -->
+
+        <!-- 视频 -->
+        <!-- 在HTML当中 如果属性名和属性值一样 那么后面的 = "controls" 可以进行省略 直接写 controls-->
+        <video src="video/1.mp4" controls = "controls" width=" 90%"></video>
+
+        <!-- 音频 -->
+        <!-- <audio src="audio/1.mp3" controls></audio> -->
+
+        <!-- 文本 -->
+        <br>
+        <p>
+          <b>央视网消息（焦点访谈）：</b>  
+          <!-- strong具有强调语义 -->
+          <strong>党的十八大以来，以习近平同志为核心的党中央始终把解决粮食安全问题作为治国理政的头等大事，
+            重农抓粮一系列政策举措有力有效，
+          </strong> 
+            我国粮食产量站稳1.3万亿斤台阶，实现谷物基本自给、口粮绝对安全。
+           我们把饭碗牢牢端在自己手中，为保障经济社会发展提供了坚实支撑
+        </p>
+        <br>
+        <img src="img/1.jpg">
+        <p>为应对各种风险挑战赢得了主动 。连续八年1.3万亿斤，这个沉甸甸的数据是如何取得的呢？</p>
+        
+        <img src="img/2.jpg">
+        <p>今年，我国启动了新一轮千亿斤粮食产能提升行动，这是一个新的起点。2015年以来，我国粮食产量连续8年稳定在1.3万亿斤以上
+            ，人均粮食占有量始终稳稳高于国际公认的400公斤粮食安全线。从十年前的约12200亿斤到2022年的约13700亿斤，粮食产量提高了1500亿斤。
+        </p>
+
+        <img src="img/3.jpg">
+        <p>　中国式现代化一个重要的中国特色是人口规模巨大的现代化。我们粮食生产的发展，意味着我们要立足国内，
+            解决14亿多人吃饭的问题。仓廪实，天下安。保障粮食安全是一个永恒的课题，任何时候都不能放松。在以习近平同志为核心的党中央坚强领导下，亿万中国人民辛勤耕耘、不懈奋斗
+            ，我们就一定能够牢牢守住粮食安全这一“国之大者”，把中国人的饭碗牢牢端在自己手中，夯实中国式现代化基础。
+        </p>
+        <img src="img/4.jpg">
+
+        <p id="plast">
+            BY:Dick;
+        </p>
+
+
+    </div>
+</body>
+</html>

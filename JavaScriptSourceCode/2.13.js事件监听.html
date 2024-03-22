@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="btn1" value="按钮1" onclick="on()">
+    <input type="button" id="btn2" value="按钮2">
+    
+</body>
+<script>
+    //方式1
+    function on() {
+        alert("1");
+    }
+    //方式2
+    document.getElementById("btn2").onclick = function () {
+        alert("2");
+    }
+
+
+</script>
+</html>

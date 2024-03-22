@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-变量</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+    var a = 10;
+    alert(a);//10
+    
+    a = "dick";
+    alert(a);//dick
+
+    // var 的作用域大 是全局变量
+    {
+        var b = 10;
+    }
+    alert(b);
+
+    // var定义的变量可以重复定义
+    var a = 10;
+    var a = "dick";//上面的a会被下面的a覆盖
+
+
+    //let : 局部变量 且 不能重复定义
+    {
+        let x = 1;
+        // let x = "a"; 编译报错
+    }
+    alert(x);
+    //不会显示警告框
+
+    //const :常量 不能修改
+    const pi = 3.1415;
+    pi = 3.15;
+
+    alert(pi);
+    // 页面开发者工具报错
+    //Uncaught ReferenceError: x is not defined
+    // at 2.3.js-变量.html:35:11
+
+</script>
+</html>

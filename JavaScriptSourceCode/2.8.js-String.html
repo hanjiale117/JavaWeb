@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+        //创建字符串
+        var str = "Hello string";
+
+        console.log(str);
+        //Hello string
+
+        //length
+        console.log(str.length);
+        //12
+
+        //charAt
+        console.log(str.charAt(0));//H
+        console.log(str.charAt(1));//E
+        console.log(str.charAt(2));//L
+        console.log(str.charAt(3));//L
+        console.log(str.charAt(4));//O
+
+        //indexOf
+        console.log(str.indexOf("lo"));//3
+
+        //trim 去除字符串左右俩侧的空格
+        var str1 = str.trim();
+        console.log(str1);
+        
+        //substring(start,end) start:开始索引 end:结束索引 含头不含尾
+        console.log(str.substring(0,5));//Hello
+
+
+
+</script>
+</html>
