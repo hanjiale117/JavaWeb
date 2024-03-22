@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$" dumb="true">
+      <excludeFolder url="file://$MODULE_DIR$/src/main/java/com/it117/spring_boot_tlias/aop" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/java/com/it117/spring_boot_tlias/aop_daili" />
+    </content>
+  </component>
+</module>
